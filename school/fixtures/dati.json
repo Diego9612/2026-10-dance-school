@@ -1,0 +1,155 @@
+[
+{
+    "model": "schoolmanagement.school",
+    "pk": 1,
+    "fields": {
+        "name": "Norbert",
+        "street": "Via Emilia Centro 100",
+        "city": "Modena",
+        "province": "MO",
+        "zip": "41121",
+        "country": "Italia",
+        "website": null,
+        "phone": "059 123 4567",
+        "email": "info@norbert-dance.it",
+        "vat": null
+    }
+},
+{
+    "model": "schoolmanagement.school",
+    "pk": 2,
+    "fields": {
+        "name": "Nobert Bologna",
+        "street": "Via Zamboni 20",
+        "city": "Bologna",
+        "province": "BO",
+        "zip": "40126",
+        "country": "Italia",
+        "website": "https://norbert-dance.it",
+        "phone": "051 765 4321",
+        "email": "bologna@norbert-dance.it",
+        "vat": null
+    }
+},
+{
+    "model": "schoolmanagement.school",
+    "pk": 3,
+    "fields": {
+        "name": "Norbert Reggio Emilia",
+        "street": "Via Roma 5",
+        "city": "Reggio Emilia",
+        "province": "RE",
+        "zip": "42121",
+        "country": "Italia",
+        "website": null,
+        "phone": "0522 123 456",
+        "email": null,
+        "vat": null
+    }
+},
+{
+    "model": "school.dayoftheweek",
+    "pk": 1,
+    "fields": {
+        "number": 1,
+        "name": "Lunedi"
+    }
+},
+{
+    "model": "school.dayoftheweek",
+    "pk": 2,
+    "fields": {
+        "number": 2,
+        "name": "Martedi"
+    }
+},
+{
+    "model": "school.dayoftheweek",
+    "pk": 3,
+    "fields": {
+        "number": 3,
+        "name": "Mercoledi"
+    }
+},
+{
+    "model": "school.dayoftheweek",
+    "pk": 4,
+    "fields": {
+        "number": 4,
+        "name": "Giovedi"
+    }
+},
+{
+    "model": "school.dayoftheweek",
+    "pk": 5,
+    "fields": {
+        "number": 5,
+        "name": "Venerdi"
+    }
+},
+{
+    "model": "school.dayoftheweek",
+    "pk": 6,
+    "fields": {
+        "number": 6,
+        "name": "Sabato"
+    }
+},
+{
+    "model": "school.dayoftheweek",
+    "pk": 7,
+    "fields": {
+        "number": 7,
+        "name": "Domenica"
+    }
+},
+{
+    "model": "school.classroom",
+    "pk": 1,
+    "fields": {
+        "capacity": 20,
+        "name": "Sala A"
+    }
+},
+{
+    "model": "school.classroom",
+    "pk": 2,
+    "fields": {
+        "capacity": 15,
+        "name": "Sala B"
+    }
+},
+{
+    "model": "school.course",
+    "pk": 1,
+    "fields": {
+        "subject": "Salsa",
+        "day_of_the_week": 1,
+        "starting_hour": "18:00:00",
+        "classroom": 1,
+        "school": 1
+    }
+},
+{
+    "model": "school.course",
+    "pk": 2,
+    "fields": {
+        "subject": "Hip hop",
+        "day_of_the_week": 3,
+        "starting_hour": "19:30:00",
+        "classroom": 2,
+        "school": 1
+    }
+},
+{
+    "model": "school.course",
+    "pk": 3,
+    "fields": {
+        "subject": "Danza classica",
+        "day_of_the_week": 5,
+        "starting_hour": "17:00:00",
+        "classroom": 1,
+        "school": 2
+    }
+}
+]

@@ -1,0 +1,19 @@
+{% extends "base_list.html" %}
+{% block custom-type %}corsi{% endblock %}
+{% block list-header %}<th>Id</th><th>Materia</th><th>Giorno</th><th>Ora</th>{% endblock %}
+{% block list-rows %}
+    {% for el in object_list %}
+        <tr>
+            <td>{{ el.id }}</td>
+            <td>{{ el.subject }}</td>
+            <td>{{ el.day_of_the_week }}</td>
+            <td>{{ el.starting_hour|time:"H:i" }}</td>
+            <td><a href="{% url 'course_detail' el.id %}">Mostra</a></td>
+            <td><a href="{% url 'course_update' el.id %}">Modifica</a></td>
+            <td><a href="{% url 'course_delete' el.id %}">Elimina</a></td>
+        </tr>
+    {% endfor %}
+{% endblock %}
+{% block add-new %}
+    <p><a href="{% url 'course_create' %}">Aggiungi nuovo</a></p>
+{% endblock %}
