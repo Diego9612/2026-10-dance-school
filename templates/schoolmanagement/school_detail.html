@@ -1,0 +1,11 @@
+{% extends "base_detail.html" %}
+{% block detail-content %}
+    <p>Via: {{ object.street }}</p>
+    <p>Città: {{ object.city }} ({{ object.province }}) {{ object.zip }}</p>
+    <p>Paese: {{ object.country }}</p>
+    <p>Sito web: {{ object.website|default:"-" }}</p>
+    <p>Telefono: {{ object.phone|default:"-" }}</p>
+    <p>Email: {{ object.email|default:"-" }}</p>
+    <p>Partita IVA: {{ object.vat|default:"-" }}</p>
+    <p><a href="{% url 'school_list' %}">Torna alla lista</a></p>
+{% endblock %}

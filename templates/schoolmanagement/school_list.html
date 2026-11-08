@@ -1,0 +1,14 @@
+{% extends "base_list.html" %}
+{% block title %}Le nostre sedi{% endblock %}
+{% block custom-type %}scuole{% endblock %}
+{% block list-header %}<th>Nome</th><th>Via</th><th>Telefono</th><th>Email</th>{% endblock %}
+{% block list-rows %}
+    {% for el in object_list %}
+        <tr>
+            <td><a href="{% url 'school_detail' el.id %}">{{ el.name }}</a></td>
+            <td>{{ el.street }}</td>
+            <td>{{ el.phone|default:"-" }}</td>
+            <td>{{ el.email|default:"-" }}</td>
+        </tr>
+    {% endfor %}
+{% endblock %}
